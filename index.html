@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-header">
+        <nav>
+            <div class="logo-area">
+                <div class="logo">
+                    <span class="d-icon">D</span> Dictionary
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <h1>The Dictionary for the Real World</h1>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon-left"></i>
+                    <input type="text" id="inp-word" placeholder="Search a word or phrase" autocomplete="off">
+                    <button id="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        
+        <div id="result" class="result-container"></div>
+
+        <div class="cards-grid" id="default-cards">
+            <div class="card quote-card">
+                <div class="card-header">
+                    <h2>Quote of the Day</h2>
+                </div>
+                
+                <div class="quote-content">
+                    <blockquote>
+                        "A word is dead when it is said, some say. I say it just begins to live that day."
+                    </blockquote>
+                    <cite>— Emily Dickinson</cite>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
